@@ -5,7 +5,10 @@ test('returns a successful response', function () {
 
     $response
         ->assertOk()
-        ->assertSee('Solid Digital Nordic AB')
+        ->assertSee('<title>Solid Digital Nordic AB</title>', false)
+        ->assertDontSee('Laravel')
+        ->assertSee('/images/sdn_96_dpi.png?v=2', false)
+        ->assertDontSee('favicon.svg')
         ->assertSee('hej@solid-digital.se')
         ->assertSee('https://beta.createfood.online/sv')
         ->assertDontSee('https://createfood.online/welcome/lang/swedish')
