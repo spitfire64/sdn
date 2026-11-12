@@ -20,7 +20,8 @@ class FortifyServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        // Uncomment the routes by deleting this call when the site has accounts.
+        Fortify::ignoreRoutes();
     }
 
     /**

@@ -1,9 +1,7 @@
 <?php
 
-use Laravel\Fortify\Features;
-
 beforeEach(function () {
-    $this->skipUnlessFortifyHas(Features::registration());
+    $this->markTestSkipped('Accounts are disabled on the public site.');
 });
 
 test('registration screen can be rendered', function () {

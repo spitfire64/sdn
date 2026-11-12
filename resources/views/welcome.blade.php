@@ -51,15 +51,18 @@
                         <flux:menu.item href="#arbetssatt">Arbetssätt</flux:menu.item>
                         <flux:menu.item href="#referenser">Referenser</flux:menu.item>
                         <flux:menu.item href="#kontakt">Kontakt</flux:menu.item>
+                        {{-- Uncomment when the site has accounts.
                         <flux:menu.separator />
                         @auth
                             <flux:menu.item :href="route('dashboard')" icon="home">Dashboard</flux:menu.item>
                         @else
                             <flux:menu.item :href="route('login')" icon="arrow-right-end-on-rectangle">Logga in</flux:menu.item>
                         @endauth
+                        --}}
                     </flux:menu>
                 </flux:dropdown>
 
+                {{-- Uncomment when the site has accounts.
                 @auth
                     <flux:button :href="route('dashboard')" variant="primary" class="max-lg:hidden !bg-sky-700 hover:!bg-sky-600">
                         Dashboard
@@ -69,6 +72,7 @@
                         Logga in
                     </flux:button>
                 @endauth
+                --}}
             </flux:navbar>
         </flux:header>
 
@@ -220,8 +224,8 @@
                 <div class="mt-12 grid gap-4 sm:grid-cols-2">
                     @foreach ([
                         [
-                            'label' => 'createfood.online',
-                            'url' => 'https://createfood.online/welcome/lang/swedish',
+                            'label' => 'beta.createfood.online',
+                            'url' => 'https://beta.createfood.online/sv',
                             'image' => 'createfood.png',
                             'description' => 'Program för livsmedelsindustrin. Innehåller flera ovärderliga moduler',
                         ],

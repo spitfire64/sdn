@@ -4,7 +4,7 @@ use App\Models\User;
 use Laravel\Fortify\Features;
 
 beforeEach(function () {
-    $this->skipUnlessFortifyHas(Features::twoFactorAuthentication());
+    $this->markTestSkipped('Accounts are disabled on the public site.');
 });
 
 test('two factor challenge redirects to login when not authenticated', function () {

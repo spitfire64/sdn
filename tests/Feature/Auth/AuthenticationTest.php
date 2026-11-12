@@ -3,6 +3,10 @@
 use App\Models\User;
 use Laravel\Fortify\Features;
 
+beforeEach(function () {
+    $this->markTestSkipped('Accounts are disabled on the public site.');
+});
+
 test('login screen can be rendered', function () {
     $response = $this->get(route('login'));
 

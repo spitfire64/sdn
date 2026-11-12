@@ -6,7 +6,7 @@ use Laravel\Fortify\Features;
 use Livewire\Livewire;
 
 beforeEach(function () {
-    $this->skipUnlessFortifyHas(Features::twoFactorAuthentication());
+    $this->markTestSkipped('Accounts are disabled on the public site.');
 
     Features::twoFactorAuthentication([
         'confirm' => true,

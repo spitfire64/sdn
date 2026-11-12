@@ -4,10 +4,9 @@ use App\Models\User;
 use Illuminate\Auth\Events\Verified;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\URL;
-use Laravel\Fortify\Features;
 
 beforeEach(function () {
-    $this->skipUnlessFortifyHas(Features::emailVerification());
+    $this->markTestSkipped('Accounts are disabled on the public site.');
 });
 
 test('email verification screen can be rendered', function () {
