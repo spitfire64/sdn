@@ -7,7 +7,7 @@ test('returns a successful response', function () {
         ->assertOk()
         ->assertSee('<title>Solid Digital Nordic AB</title>', false)
         ->assertDontSee('Laravel')
-        ->assertSee('/images/sdn_96_dpi.png?v=2', false)
+        ->assertSee('/images/sdn-favicon.png?v=3', false)
         ->assertDontSee('favicon.svg')
         ->assertSee('Snabb och kostnadseffektiv app-utveckling')
         ->assertDontSee('Snabbt och kostnadseffektivt.')

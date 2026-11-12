@@ -3,8 +3,8 @@
 
 <title>{{ filled($title ?? null) ? $title : 'Solid Digital Nordic AB' }}</title>
 
-<link rel="icon" href="/images/sdn_96_dpi.png?v=2" type="image/png">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2">
+<link rel="icon" href="/images/sdn-favicon.png?v=3" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3">
 
 @fonts
 
