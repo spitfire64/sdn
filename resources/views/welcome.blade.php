@@ -96,7 +96,7 @@
                             level="1"
                             class="landing-rise landing-rise-delay-1 mt-8 !font-display !text-4xl !font-semibold !tracking-tight !text-white sm:!text-5xl lg:!text-6xl"
                         >
-                            Snabbt och kostnadseffektivt.
+                            Snabb och kostnadseffektiv app-utveckling
                         </flux:heading>
 
                         <flux:text class="landing-rise landing-rise-delay-2 mt-5 max-w-xl !text-lg !text-sky-100/90 sm:!text-xl">

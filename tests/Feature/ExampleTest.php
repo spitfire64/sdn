@@ -9,6 +9,8 @@ test('returns a successful response', function () {
         ->assertDontSee('Laravel')
         ->assertSee('/images/sdn_96_dpi.png?v=2', false)
         ->assertDontSee('favicon.svg')
+        ->assertSee('Snabb och kostnadseffektiv app-utveckling')
+        ->assertDontSee('Snabbt och kostnadseffektivt.')
         ->assertSee('hej@solid-digital.se')
         ->assertSee('https://beta.createfood.online/sv')
         ->assertDontSee('https://createfood.online/welcome/lang/swedish')
